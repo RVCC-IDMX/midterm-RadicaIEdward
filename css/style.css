@@ -1,2 +1,20 @@
 /* Journey to the Center of the Earth Practicum */
 /* Edward Galindez */
+/* #000000 b1 - #765729  b2 - #886644  b3 - #A52A2A */
+
+header, nav, main, aside, footer {
+  border: 2px solid #886644;
+  padding: 25px 20px;
+  background-color: rgb(241, 236, 228);
+  box-shadow: inset 10px 10px 10px #777777;
+}
+
+header {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+footer {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
