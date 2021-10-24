@@ -28,6 +28,7 @@ header {
 
 header > h1 {
   font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 2em;
   text-shadow: 3px 3px 3px black;
   color: white;
   text-align: center;
@@ -135,5 +136,27 @@ main > p:nth-child(3)::first-line {
 figcaption {
   text-align: center;
   font-style: italic;
+}
+
+/* Tablet-Sized */
+
+@media (min-width: 786px) {
+  header > h1 {
+    font-size: 3em;
+  }
+  
+  aside{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    column-gap: 10px;
+  }
+
+  h2 {
+    grid-column: 1 / -1 ;
+  }
+
+  .submission {
+    grid-row-start: 2;
+  }
 }
 
