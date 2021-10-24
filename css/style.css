@@ -197,7 +197,7 @@ figcaption {
     max-width: 1200px;
     display: grid;
     justify-self: center ;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 2fr .65fr;
     grid-template-rows: auto;
     grid-template-areas: 
     "header header"
