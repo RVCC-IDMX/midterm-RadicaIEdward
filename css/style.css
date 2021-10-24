@@ -13,6 +13,7 @@ header, nav, main, aside, footer {
   padding: 25px 20px;
   background-color: rgb(255, 255, 255, .75);
   box-shadow: inset 10px 10px 10px rgb(112, 112, 112);
+  margin-top: 8px;
 }
 
 /* Header */
@@ -34,13 +35,19 @@ header > h1 {
   text-align: center;
 }
 
-/* Nav Links */
+/* Nav Bar */
+
+nav {
+ padding: 4px;
+}
 
 nav > ul { 
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   list-style: none;
   justify-content: center;
+  padding-inline-start: 0px;
 }
 
 nav > ul > li {
@@ -114,12 +121,12 @@ main > p:nth-child(3)::first-line {
   padding: 10px;
   border: 1px black solid;
   margin-top: 10px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.671);
 }
 
 .opinion {
   text-align: center;
-}
+} 
 
 .signature {
   text-align: center;
@@ -159,4 +166,56 @@ figcaption {
     grid-row-start: 2;
   }
 }
+
+@media (min-width: 1024px) {
+
+  html {
+    display: grid;
+  }
+
+  header{
+    grid-area: header;
+  }
+
+  nav {
+    grid-area: nav;
+  }
+
+  main {
+    grid-area: main;
+  }
+
+  aside {
+    grid-area: aside;
+  }
+
+  footer {
+    grid-area: footer;
+  }
+
+  body {
+    max-width: 1200px;
+    display: grid;
+    justify-self: center ;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header"
+    "nav nav"
+    "main aside"
+    "footer footer";
+    gap: 8px;
+  }
+
+  aside {
+    display: inline;
+  }
+
+  header, nav, main, aside, footer {
+    margin: 0px
+  }
+
+}
+
+
 
