@@ -2,19 +2,138 @@
 /* Edward Galindez */
 /* #000000 b1 - #765729  b2 - #886644  b3 - #A52A2A */
 
+body {
+  background-image: linear-gradient(#765729, black);
+}
+
+/* General */
+
 header, nav, main, aside, footer {
   border: 2px solid #886644;
   padding: 25px 20px;
-  background-color: rgb(241, 236, 228);
-  box-shadow: inset 10px 10px 10px #777777;
+  background-color: rgb(255, 255, 255, .75);
+  box-shadow: inset 10px 10px 10px rgb(112, 112, 112);
 }
+
+/* Header */
 
 header {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  background-image: url("/img/cave.jpg");
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 20px 20px 20px black;
 }
+
+header > h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-shadow: 3px 3px 3px black;
+  color: white;
+  text-align: center;
+}
+
+/* Nav Links */
+
+nav > ul { 
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: center;
+}
+
+nav > ul > li {
+  display: inline;
+  padding: 0px 20px;
+  border-left:  double;
+}
+
+nav > ul > li:nth-child(1) {
+  border-left:  none;
+}
+
+/* Footer */
 
 footer {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  text-align: center;
 }
+
+/* Heading Underlines */
+
+h2{
+  border-bottom: dashed;
+  border-width: thin;
+}
+
+/* Style Links */
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #A52A2A;
+}
+
+/* Style Character Names */
+
+.character {
+  font-weight: bold;
+}
+
+/* Style Foregin Languages */
+
+span[lang]{
+  font-style: italic;
+}
+
+/* Cover */
+
+#cover {  
+  width: 190px;
+  margin-left: 0px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  float: left;
+}
+
+/* Enlarge first line of the first paragraph */
+
+main > p:nth-child(3)::first-line {
+  font-size: larger;
+}
+
+/* Book Reviews */
+
+.submission {
+  padding: 10px;
+  border: 1px black solid;
+  margin-top: 10px;
+  background-color: white;
+}
+
+.opinion {
+  text-align: center;
+}
+
+.signature {
+  text-align: center;
+  font-style: italic;
+}
+
+/* Cryptogram Image */
+
+.runes {
+  width: 100%;
+  height: auto;
+}
+
+figcaption {
+  text-align: center;
+  font-style: italic;
+}
+
